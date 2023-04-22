@@ -41,7 +41,7 @@ class MinTimeTableView_KhoaCustom : BaseTimeTable {
         super.isRatio = true
     }
 
-    fun initTable(dayList: Array<String>) {
+    fun initTable(dayList: Array<String>, mode:Int = 0) { //Mode 0: Both 2 menu, 1: horizontal menu, 2: verticalmenu
         super.tableStartTime = 9
         super.tableEndTime = 16
         super.dayList = dayList
@@ -74,8 +74,19 @@ class MinTimeTableView_KhoaCustom : BaseTimeTable {
             super.cellHeight.toFloat()
         )
 
-        leftMenu.layoutParams = LayoutParams(0, LayoutParams.WRAP_CONTENT)
-        topMenu.layoutParams =  LayoutParams(LayoutParams.WRAP_CONTENT, 0)
+        if(mode == 0){
+            leftMenu.layoutParams = LayoutParams(super.leftMenuWidthPx.roundToInt(), LayoutParams.WRAP_CONTENT)
+            topMenu.layoutParams =  LayoutParams(LayoutParams.WRAP_CONTENT, super.topMenuHeightPx.roundToInt())
+        }
+        if(mode == 1){
+            leftMenu.layoutParams = LayoutParams(0, LayoutParams.WRAP_CONTENT)
+            topMenu.layoutParams =  LayoutParams(LayoutParams.WRAP_CONTENT, super.topMenuHeightPx.roundToInt())
+        }
+        if(mode == 2){
+            leftMenu.layoutParams = LayoutParams(super.leftMenuWidthPx.roundToInt(), LayoutParams.WRAP_CONTENT)
+            topMenu.layoutParams =  LayoutParams(LayoutParams.WRAP_CONTENT, 0)
+        }
+
         mainTable.layoutParams = LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT)
         if (super.border) {
             borderBox.setBackgroundColor(super.lineColor)
