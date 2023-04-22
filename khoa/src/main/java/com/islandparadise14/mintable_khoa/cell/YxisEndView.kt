@@ -18,7 +18,7 @@ class YxisEndView(context: Context, height: Int, width: Int, text: String, menuC
         inflater.inflate(R.layout.y_xis_end, this, true)
 
         leftMenuEndItem.layoutParams = LayoutParams(width, height)
-        yXisEnd.text = text
+        yXisEnd.text = text + "h"
         if(menuColor != 0)
             yXisEnd.setBackgroundColor(menuColor)
     }

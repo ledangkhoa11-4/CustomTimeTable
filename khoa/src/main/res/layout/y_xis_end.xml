@@ -8,12 +8,12 @@
         android:id="@+id/yXisEnd"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#fafafa"
-        android:gravity="right"
-        android:textColor="#222222"
-        android:textSize="12sp"
         android:layout_marginRight="1dp"
-        android:paddingBottom="1dp"
+        android:background="#fafafa"
+        android:gravity="center"
         android:paddingRight="3dp"
-        android:text="9" />
+        android:paddingBottom="1dp"
+        android:text="9"
+        android:textColor="#222222"
+        android:textSize="12sp" />
 </LinearLayout>

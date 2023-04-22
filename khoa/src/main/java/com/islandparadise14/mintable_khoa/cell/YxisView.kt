@@ -18,7 +18,7 @@ class YxisView(context: Context, height: Int, width: Int, text: String, menuColo
         inflater.inflate(R.layout.y_xis, this, true)
 
         leftMenuItem.layoutParams = LayoutParams(width, height)
-        yXis.text = text
+        yXis.text = text + "h"
         if(menuColor != 0)
             yXis.setBackgroundColor(menuColor)
 
