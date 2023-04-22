@@ -64,9 +64,8 @@ class MinTimeTableView_KhoaCustom : BaseTimeTable {
         else
             (timetable.width - super.leftMenuWidthPx.roundToInt()) / (super.dayList).size
 
-        if (super.isFullScreen) {
-            timetable.setPadding(super.widthPaddingPx.roundToInt(), 0, super.widthPaddingPx.roundToInt(), 0)
-        }
+        timetable.setPadding(super.widthPaddingPx.roundToInt(), 0, super.widthPaddingPx.roundToInt(), 0)
+
 
         super.cellHeightPx = if (super.isRatio) super.averageWidth * super.cellRatio
         else dpToPx(
@@ -218,7 +217,7 @@ class MinTimeTableView_KhoaCustom : BaseTimeTable {
 
     fun cellColor(color: Int) {
         super.cellColor = color
-        initTable(super.dayList)
+        initTable(super.dayList,3)
         updateSchedules(super.schedules)
     }
 
