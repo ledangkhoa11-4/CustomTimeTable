@@ -1,4 +1,4 @@
-package com.islandparadise14.mintable
+package com.islandparadise14.mintable_khoa
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -6,15 +6,15 @@ import android.os.Build
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.widget.LinearLayout
-import com.islandparadise14.mintable.cell.TableCellView
-import com.islandparadise14.mintable.cell.YxisEndView
-import com.islandparadise14.mintable.cell.YxisView
-import com.islandparadise14.mintable.model.ScheduleEntity
-import com.islandparadise14.mintable.tableinterface.OnScheduleClickListener
-import com.islandparadise14.mintable.tableinterface.OnScheduleLongClickListener
-import com.islandparadise14.mintable.tableinterface.OnTimeCellClickListener
-import com.islandparadise14.mintable.utils.dpToPx
-import com.islandparadise14.mintable.utils.getHour
+import com.islandparadise14.mintable_khoa.cell.TableCellView
+import com.islandparadise14.mintable_khoa.cell.YxisEndView
+import com.islandparadise14.mintable_khoa.cell.YxisView
+import com.islandparadise14.mintable_khoa.model.ScheduleEntity
+import com.islandparadise14.mintable_khoa.tableinterface.OnScheduleClickListener
+import com.islandparadise14.mintable_khoa.tableinterface.OnScheduleLongClickListener
+import com.islandparadise14.mintable_khoa.tableinterface.OnTimeCellClickListener
+import com.islandparadise14.mintable_khoa.utils.dpToPx
+import com.islandparadise14.mintable_khoa.utils.getHour
 import kotlinx.android.synthetic.main.mintable.view.*
 import kotlin.math.roundToInt
 

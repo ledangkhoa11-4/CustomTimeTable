@@ -1,4 +1,4 @@
-package com.islandparadise14.mintable.schedule
+package com.islandparadise14.mintable_khoa.schedule
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -7,13 +7,12 @@ import android.graphics.drawable.GradientDrawable
 import android.view.Gravity
 import android.view.LayoutInflater
 import android.widget.LinearLayout
-import com.islandparadise14.mintable.BaseTimeTable
-import com.islandparadise14.mintable.R
-import com.islandparadise14.mintable.model.ScheduleEntity
-import com.islandparadise14.mintable.tableinterface.OnScheduleClickListener
-import com.islandparadise14.mintable.tableinterface.OnScheduleLongClickListener
-import com.islandparadise14.mintable.utils.dpToPx
-import com.islandparadise14.mintable.utils.getTotalMinute
+import com.islandparadise14.mintable_khoa.R
+import com.islandparadise14.mintable_khoa.model.ScheduleEntity
+import com.islandparadise14.mintable_khoa.tableinterface.OnScheduleClickListener
+import com.islandparadise14.mintable_khoa.tableinterface.OnScheduleLongClickListener
+import com.islandparadise14.mintable_khoa.utils.dpToPx
+import com.islandparadise14.mintable_khoa.utils.getTotalMinute
 import kotlinx.android.synthetic.main.item_schedule.view.*
 
 @SuppressLint("ViewConstructor")

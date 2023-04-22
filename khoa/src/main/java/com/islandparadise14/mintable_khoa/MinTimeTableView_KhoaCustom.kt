@@ -1,21 +1,21 @@
-package com.islandparadise14.mintable
+package com.islandparadise14.mintable_khoa
 
 import android.content.Context
 import android.util.AttributeSet
-import com.islandparadise14.mintable.cell.XxisEndView
-import com.islandparadise14.mintable.cell.XxisView
-import com.islandparadise14.mintable.cell.ZeroPointView
-import com.islandparadise14.mintable.model.ScheduleEntity
-import com.islandparadise14.mintable.schedule.ScheduleView
-import com.islandparadise14.mintable.tableinterface.OnScheduleClickListener
-import com.islandparadise14.mintable.tableinterface.OnScheduleLongClickListener
-import com.islandparadise14.mintable.tableinterface.OnTimeCellClickListener
-import com.islandparadise14.mintable.utils.dpToPx
-import com.islandparadise14.mintable.utils.getWindowWidth
+import com.islandparadise14.mintable_khoa.cell.XxisEndView
+import com.islandparadise14.mintable_khoa.cell.XxisView
+import com.islandparadise14.mintable_khoa.cell.ZeroPointView
+import com.islandparadise14.mintable_khoa.model.ScheduleEntity
+import com.islandparadise14.mintable_khoa.schedule.ScheduleView
+import com.islandparadise14.mintable_khoa.tableinterface.OnScheduleClickListener
+import com.islandparadise14.mintable_khoa.tableinterface.OnScheduleLongClickListener
+import com.islandparadise14.mintable_khoa.tableinterface.OnTimeCellClickListener
+import com.islandparadise14.mintable_khoa.utils.dpToPx
+import com.islandparadise14.mintable_khoa.utils.getWindowWidth
 import kotlinx.android.synthetic.main.mintable.view.*
 import kotlin.math.roundToInt
 
-class MinTimeTableView : BaseTimeTable {
+class MinTimeTableView_KhoaCustom : BaseTimeTable {
 
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
@@ -90,7 +90,7 @@ class MinTimeTableView : BaseTimeTable {
                 ).roundToInt(),0,0)
             averageWidth -= 1
         }
-        com.islandparadise14.mintable.utils.removeViews(
+        com.islandparadise14.mintable_khoa.utils.removeViews(
             arrayOf(
                 zeroPoint,
                 topMenu,
@@ -156,7 +156,7 @@ class MinTimeTableView : BaseTimeTable {
         }
         super.calculateTime(super.schedules)
 
-        com.islandparadise14.mintable.utils.removeViews(
+        com.islandparadise14.mintable_khoa.utils.removeViews(
             arrayOf(
                 timeCell,
                 mainTable

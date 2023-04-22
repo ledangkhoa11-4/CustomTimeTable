@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:dist="http://schemas.android.com/apk/distribution"
-    package="com.islandparadise14.mintable">
+    package="com.islandparadise14.mintable_khoa">
 
     <dist:module dist:instant="true" />
     <application

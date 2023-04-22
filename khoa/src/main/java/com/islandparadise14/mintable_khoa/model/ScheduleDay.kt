@@ -1,4 +1,4 @@
-package com.islandparadise14.mintable.model
+package com.islandparadise14.mintable_khoa.model
 
 object ScheduleDay {
     const val MONDAY = 0
