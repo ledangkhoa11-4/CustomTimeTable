@@ -20,8 +20,8 @@ import kotlin.math.roundToInt
 
 open class BaseTimeTable : LinearLayout {
 
-    protected var topMenuHeight: Int = 0
-    protected var leftMenuWidth: Int = 0
+    protected var topMenuHeight: Int = 20
+    protected var leftMenuWidth: Int = 30
     protected var cellHeight: Int = 50
 
     protected var isRatio: Boolean = false

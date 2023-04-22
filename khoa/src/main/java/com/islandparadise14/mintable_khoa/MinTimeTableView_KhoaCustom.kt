@@ -74,8 +74,8 @@ class MinTimeTableView_KhoaCustom : BaseTimeTable {
             super.cellHeight.toFloat()
         )
 
-        leftMenu.layoutParams = LayoutParams(super.leftMenuWidthPx.roundToInt(), LayoutParams.WRAP_CONTENT)
-        topMenu.layoutParams =  LayoutParams(LayoutParams.WRAP_CONTENT, super.topMenuHeightPx.roundToInt())
+        leftMenu.layoutParams = LayoutParams(0, LayoutParams.WRAP_CONTENT)
+        topMenu.layoutParams =  LayoutParams(LayoutParams.WRAP_CONTENT, 0)
         mainTable.layoutParams = LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT)
         if (super.border) {
             borderBox.setBackgroundColor(super.lineColor)
