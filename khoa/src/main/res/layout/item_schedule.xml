@@ -4,9 +4,10 @@
     android:id="@+id/tableItem"
     android:layout_width="0dp"
     android:layout_height="wrap_content"
+    android:background="@drawable/border"
     android:elevation="1dp"
-    android:padding="3dp"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="3dp">
 
     <TextView
         android:id="@+id/name"

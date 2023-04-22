@@ -108,7 +108,7 @@ class ScheduleView(context: Context,
             }
         }
 
-        tableItem.background = border
+        //tableItem.background = border
 
         name.text = entity.scheduleName
         room.text = entity.roomInfo
