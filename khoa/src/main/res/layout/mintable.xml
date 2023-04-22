@@ -16,10 +16,11 @@
 
         <LinearLayout
             android:id="@+id/leftMenu"
-            android:layout_width="30dp"
+            android:layout_width="0dp"
             android:layout_height="600dp"
             android:background="#dddddd"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:visibility="invisible">
 
 
             <LinearLayout
@@ -32,7 +33,7 @@
 
             <LinearLayout
                 android:id="@+id/timeCell"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
@@ -48,9 +49,10 @@
             <LinearLayout
                 android:id="@+id/topMenu"
                 android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:background="#dddddd"
-                android:layout_height="30dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:visibility="invisible">
 
             </LinearLayout>
 
